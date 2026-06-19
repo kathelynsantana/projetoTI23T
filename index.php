@@ -21,6 +21,11 @@
     <a href="telas/multiplicar.php" class="btn btn-primary">Multiplicar</a>
     <a href="telas/dividir.php" class="btn btn-primary">Dividir</a>
     <a href="telas/equacao.php" class="btn btn-primary">Equação de Segundo Grau</a>
+    <a href="telas/imc.php" class="btn btn-primary">Classificação do IMC</a>
+    <a href="telas/areaRetangulo.php" class="btn btn-primary">Cálculo da Área do Retângulo</a>
+    <a href="telas/areaTriangulo.php" class="btn btn-primary">Cálculo da Área do Triângulo</a>
+    <a href="telas/precoProdutoImposto.php" class="btn btn-primary">Imposto de 18%</a>
+    <a href="telas/conversaoIdadeDias.php" class="btn btn-primary">Conversão de Idades para Dias</a>
 
 <!-- Fim dos Hiperlinks -->
     

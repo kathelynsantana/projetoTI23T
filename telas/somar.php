@@ -61,7 +61,7 @@
                 if(isset($_POST['primeiroNumero']) || isset($_POST['segundoNumero'])){
                     
                     //Executando o método...
-                    echo $funcao->dividir();
+                    echo $funcao->somar();
                     
                 }else{
 
