@@ -26,6 +26,22 @@
     <a href="telas/areaTriangulo.php" class="btn btn-primary">Cálculo da Área do Triângulo</a>
     <a href="telas/precoProdutoImposto.php" class="btn btn-primary">Imposto de 18%</a>
     <a href="telas/conversaoIdadeDias.php" class="btn btn-primary">Conversão de Idades para Dias</a>
+    <a href="telas/dobro.php" class="btn btn-primary">Dobro de um número</a>
+    <a href="telas/mediaTresNumeros.php" class="btn btn-primary">Média de Três Números</a>
+    <a href="telas/raizQuadrada.php" class="btn btn-primary">Raiz Quadrada</a>
+    <a href="telas/converterMetrosCentimetros.php" class="btn btn-primary">Conversão de Metros para Centímetros</a>
+    <a href="telas/areaCirculo.php" class="btn btn-primary">Área de um Círculo com base no Raio</a>
+    <a href="telas/converterCelsiusFahrenheit.php" class="btn btn-primary">Temperatura de Celsius para Fahrenhait</a>
+    <a href="telas/desconto.php" class="btn btn-primary">10% de Desconto</a>
+    <a href="telas/converterIdadeMeses.php" class="btn btn-primary">Conversão de Idade para Meses</a>
+    <a href="telas/parImpar.php" class="btn btn-primary">Par ou Ímpar?</a>
+    <a href="telas/parImpar.php" class="btn btn-primary">Cálculo do Volume de uma Caixa Retangular</a>
+    <a href="telas/volumeCaixaRetangular.php" class="btn btn-primary">Cálculo do Quadrado e Cubo de um Número</a>
+    <a href="telas/velocidadeMedia.php" class="btn btn-primary">Velocidade Média</a>
+    <a href="telas/mediaAritmetica.php" class="btn btn-primary">Média Aritmética</a>
+    <a href="telas/salarioMensal.php" class="btn btn-primary">Sálario Mensal</a>
+    <a href="telas/tempoVida.php" class="btn btn-primary">Tempo restante de vida até 100 anos</a>
+    <a href="telas/somaMedia.php" class="btn btn-primary">Soma e Média de Três Números</a>
 
 <!-- Fim dos Hiperlinks -->
     

@@ -15,7 +15,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversão de Idade para Dias</title>
+    <title>Converter Temperatura em Celsius para Fahrenheit</title>
 </head>
 <body>
 
@@ -24,56 +24,57 @@
     <form method="POST" style="text-align:center;margin:10%;background-color:#ffb5ff;padding:5%;"> 
         
         <!-- Título -->
-        <h1>Conversão de Idade para Dias</h1>    
+        <h1>Converter Temperatura em Celsius para Fahrenheit</h1>    
         
         <!-- Aba de Informações -->
-        <!-- TextArea da Idade -->
+        <!-- TextArea da Temperatura -->
         <div class="mb-3">
-            <label for="lPeso" class="form-label">Informe a sua idade:</label>
-            <input type="number" class="form-control" id="idade" name = "idade">
+            <label for="lTemperatura" class="form-label">Informe a temperatura em Celsius (C°):</label>
+            <input type="text" class="form-control" id="temperatura" name = "temperatura">
         </div>
 
         <!-- Fim da Aba de Informações -->
 
         <!-- Botão -->
-        <!-- Botão de Conversão de Idade para Dias -->
-        <button type="submit" class="btn btn-primary">Realizar a conversão
+        <!-- Botão de Conversão de Temperatura em Celsius para Fahrenheit -->
+        <button type="submit" class="btn btn-primary">Converter
             <?php
                 
-                //Verificando se todos os campos foram preenchidos com números
-                if(isset($_POST['idade'])){
-                    $idade = $_POST['idade'];
+                //Verificando se o campofoi preenchido com número...
+                if(isset($_POST['temperatura'])){
+                    $celsius = (float)$_POST['temperatura'];
 
                     //Coletando os números e armazenando nas variáveis
-                    $resultado = $funcao->converterIdadeDia($idade);
+                    //Executando o cálculo...
+                    $resultado = $funcao->converterCelsius($celsius);
 
                 }//Fim da Verificação
             ?>
         </button>
-        <!-- Fim do Botão de Conversão de Idade para Dias -->
+        <!-- Fim do Botão de Conversão de Temperatura em Celsius para Fahrenheit -->
 
         <!-- Exibição do resultado -->
         <h2>
             <?php
             
-                //Verificando se os campos estão preenchidos
-                if(isset($_POST['idade'])){
+                //Verificando se o campo foi preenchido
+                if(isset($_POST['temperatura'])){
                     
                     //Executando o método...
                     echo $resultado;
                     
                 }else{
 
-                    //Se não estiverem preenchidos...
-                    echo "Por favor, Preencha os campos!";
+                    //Se não tiver sido preenchido...
+                    echo "Por favor, preencha todos os campos!";
 
                 }//Fim da Verificação
-                
             ?>
         </h2>
+        <!-- FIm da Exibição do resultado -->
 
     </form>
     <!-- Fim do Formulário de Informações-->
-
+     
 </body>
 </html>

@@ -284,5 +284,199 @@
 
         }//Fim do Método de Conversão de Idade para Dias
 
+        //Método de Cálculo do Dobro de um Número
+        public function dobroNumero(int $num1)
+        {
+            //Verificando se o número é menor ou igual a zero...
+            if($num1 <= 0)
+            {
+                //Se o número for menor ou igual a zero...
+                return "Erro! Não foi possível realizar o cálculo porque o número não pode ser menor ou igual a zero!";
+           
+            }else{
+
+                //Retornando o resultado com o cálculo...
+                return "<br>O dobro do $num1 é: ". $num1*2;
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo do Dobro de um Número
+
+        //Cálculo da Média de Três Números
+        public function mediaNumeros(int $num1, int $num2, int $num3)
+        {
+
+            if(($num1 <= 0) || ($num2 <= 0) || ($num3 <=0))
+            {
+                //Se um ou todos os números forem iguais ou menores que zero...
+                return "Erro! Não foi possível realizar o cálculo porque os números não podem ser menores ou iguais a zero!";
+           
+            }else{
+
+                //Calculando a média dos três números...
+                $soma = $num1 + $num2 + $num3;
+
+                 //Retornando o resultado...
+                return "<br>A média dos três números é ". $soma/3;
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo da Média de Três Números
+
+        //Cálculo de Raiz Quadrada
+        public function raizQuadradaNum(int $num)
+        {
+            //Verificando se o número é menor ou igual a zero...
+            if($num <= 0)
+            {
+                //Se o número for menor ou igual a zero...
+                return "Erro! Não foi possível realizar o cálculo porque o número não pode ser menor ou igual a zero!";
+           
+            }else{
+
+                //Realizando o cálculo...
+                $raiz = sqrt($num);
+
+                //Retornando o resultado...
+                return "A raiz quadrada de $num é: " .$raiz;
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo de Raiz Quadrada
+
+        //Conversão de Metros para Centímetros
+        public function converterMetros(float $metros)
+        {
+            //Verificando se o número é menor ou igual a zero...
+            if($metros <= 0)
+            {
+                //Se o número for menor ou igual a zero...
+                return "Erro! Não foi possível realizar o cálculo porque o valor do metro não pode ser menor ou igual a zero!";
+           
+            }else{
+
+                //Retornando o resultado...
+                return "A conversão de $metros é: " .$metros*100;
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim da Conversão de Metros para Centímetros
+
+        //Cálculo da Área de um Círculo com Base no Raio
+
+        //Conversão de Temperatura em Celsius para Fahrenheit
+        public function converterCelsius(float $celsius)
+        {
+            //Realizando a conversão...
+            $fahrenheit = $celsius*1.8 + 32;
+
+            //Retornando o resultado...
+            return "A temperatura $celsius °C em Fahrenheit é: $fahrenheit °F";
+
+        }//Fim da Conversão de Temperatura em Celsius para Fahrenheit
+
+        //Cálculo do Valor de um Produto com 10% de Desconto
+        //Método de Conversão de Idade em Meses
+        public function conversaoIdadeMeses(int $idade)
+        {
+            //Verificando se a idade é menor ou igual a zero...
+            if(($idade <= 0)){
+
+                //Se a idade é menor ou igual a zero...
+                return "Erro! A idade não pode ser menor ou igual a zero!";
+
+            }else{
+
+                //Convertendo Idade em Meses...
+                $mesesConvertidos = $idade * 12;
+
+                //Retornando o resultado
+                return "<br>$idade anos convertido em meses equivale à $mesesConvertidos meses.";
+
+            }//Fim da Verificação e da Conversão
+        }//Fim do Método de Conversão de Idade em Meses
+
+        //Verificação de Número Par ou Ímpar
+        public function parOuImpar(int $num)
+        {
+            //Verificando se o número é par ou ímpar...
+            if($num < 0)
+            {
+                //Se o número for menor ou igual a zero...
+                return "Erro! Não foi possível realizar a verificação porque o número não pode ser menor do que zero!";
+           
+            }else if($num % 2 == 0){
+
+                //Se o número for divisível por 2...
+                return "Esse número é par!";
+
+            }else{
+
+                //Se o número não for divisível por 2...
+                return "Esse número é ímpar!";
+
+            }//Fim da Verificação
+        }//Fim da Verificação de Número Par ou Ímpar
+
+        //Cálculo do Volume de uma Caixa Retangular
+        //Cálculo do Quadrado e Cubo de um número
+        public function quadradoCuboNumero(int $num)
+        {
+            if($num < 0)
+            {
+                //Se o número for menor ou igual a zero...
+                return "Erro! Não foi possível realizar a verificação porque o número não pode ser menor do que zero!";
+           
+            }else{
+
+                //Calculando...
+                $quadrado = $num*$num;
+                $cubo = $num*$num*$num;
+
+                //Retornando o resultado...
+                return "O quadrado de $num é: $quadrado e o Cubo é: $cubo";
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo do Quadrado e Cubo de um número
+        
+        //Cálculo de Velocidade Média
+
+        //Calcúlo da Média Aritmética de Dois Números
+        //Cálculo do Salário Mensal
+
+        //Verificar Tempo Restante de Vida até os 100 anos
+        public function verificarTempoVida(int $idade)
+        {
+            //Verificando se a idade é menor ou igual a zero...
+            if(($idade <= 0)){
+
+                //Se a idade é menor ou igual a zero...
+                return "Erro! A idade não pode ser menor ou igual a zero!";
+
+            }else{
+
+                //Retornando o resultado...
+                return "<br>O tempo de vida restante até os 100 anos é ".(100 - $idade);
+
+            }//Fim da Verificação e da Conversão
+        }//Fim do Verificar Tempo Restante de Vida até os 100 anos
+        
+        //Cálculo da Soma e a Média de Três Números
+        public function somaMediaNumeros(int $num1, int $num2, int $num3)
+        {
+
+            if(($num1 <= 0) || ($num2 <= 0) || ($num3 <=0))
+            {
+                //Se um ou todos os números forem iguais ou menores que zero...
+                return "Erro! Não foi possível realizar o cálculo porque os números não podem ser menores ou iguais a zero!";
+           
+            }else{
+
+                //Calculando a média dos três números...
+                $soma = $num1 + $num2 + $num3;
+                $media = $soma/3;
+
+                 //Retornando o resultado...
+                return "<br>A soma dos três números é $soma e a média é: $media";
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo da Soma e a Média de Três Números
+
     }//Fim da classe Função
 ?> <!-- Fechamento da Tag PHP -->

@@ -27,6 +27,7 @@
             <th scope="col">Faixa de IMC</th>
             <th scope="col">Classificação</th>
             </tr>
+        </thead>
 
             <!-- Fim do Cabeçalho da Tabela -->
 
