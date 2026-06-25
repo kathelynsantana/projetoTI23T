@@ -218,7 +218,6 @@
                 return "<br>A área do retângulo é: $area.";
 
             }//Fim da Verificação e do Cálculo
-
         }//Fim do Método Cálculo da Área do Retângulo
 
         //Método Cálculo da Área do Triângulo
@@ -239,7 +238,6 @@
                 return "<br>A área do Triângulo é: $area.";
 
             }//Fim da Verificação e do Cálculo
-
         }//Fim do Método Cálculo da Área do Triângulo
 
         //Método de Aplicação de Imposto em um Produto
@@ -281,7 +279,6 @@
                 return "<br>$idade anos convertido em dias equivale à $diasConvertidos dias.";
 
             }//Fim da Verificação e do Cálculo
-
         }//Fim do Método de Conversão de Idade para Dias
 
         //Método de Cálculo do Dobro de um Número
@@ -359,6 +356,24 @@
         }//Fim da Conversão de Metros para Centímetros
 
         //Cálculo da Área de um Círculo com Base no Raio
+        public function calculoAreaCirculo(float $raio)
+        {
+            //Verificando se o raio é menor ou igual a zero...
+            if(($raio <= 0)){
+
+                //Se o raio é menor ou igual a zero...
+                return "Erro! O raio não pode ser menor ou igual a zero!";
+
+            }else{
+
+                //Calculando...
+                $area = pi()*pow($raio,2);
+
+                //Retornando o resultado...
+                return "A Área do Círculo é de: $area cm.";
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo da Área de um Círculo com Base no Raio
 
         //Conversão de Temperatura em Celsius para Fahrenheit
         public function converterCelsius(float $celsius)
@@ -372,6 +387,25 @@
         }//Fim da Conversão de Temperatura em Celsius para Fahrenheit
 
         //Cálculo do Valor de um Produto com 10% de Desconto
+        public function aplicarDesconto(float $preco)
+        {
+            //Verificando se o preço do produto é menor ou igual a zero...
+            if(($preco <= 0)){
+
+                //Se o preço for menor ou igual a zero...
+                return "Erro! O preço do produto não pode ser menor ou igual a zero!";
+
+            }else{
+
+                //Realizando o cálculo do desconto...
+                $desconto = (float)$preco*0.1;
+
+                //Retornando o resultado
+                return "<br>O preço do produto com o desconto de 10% é equivalente à: ".($preco - $desconto);
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo do Valor de um Produto com 10% de Desconto
+
         //Método de Conversão de Idade em Meses
         public function conversaoIdadeMeses(int $idade)
         {
@@ -415,6 +449,25 @@
         }//Fim da Verificação de Número Par ou Ímpar
 
         //Cálculo do Volume de uma Caixa Retangular
+        public function calculoVolumeCaixa(float $comprimento, float $largura, float $altura)
+        {
+            //Verificando se os números são menores ou iguais a ero...
+            if(($comprimento <= 0) || ($largura <= 0) || ($altura <=0))
+            {
+                //Se um ou todos os números forem iguais ou menores que zero...
+                return "Erro! Não foi possível realizar o cálculo porque os valores não podem ser menores ou iguais a zero!";
+           
+            }else{
+
+                //Calculando...
+                $volume = $comprimento * $largura * $altura;
+
+                //Retornando o resultado...
+                return "O volume da caixa retangular é de: $volume cm³.";
+            
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo do Volume de uma Caixa Retangular
+
         //Cálculo do Quadrado e Cubo de um número
         public function quadradoCuboNumero(int $num)
         {
@@ -436,9 +489,63 @@
         }//Fim do Cálculo do Quadrado e Cubo de um número
         
         //Cálculo de Velocidade Média
+        public function calculoVelocidadeMedia (float $distancia, float $tempo)
+        {
+            //Verificando se os valores são menores ou iguais a zero...
+            if(($distancia <= 0) || ($tempo <= 0))
+            {
+                //Se a distância e/ou o tempo forem menores ou iguais a zero...
+                return "Erro! Não foi possível realizar o cálculo porque a distância e o tempo não podem ser menores ou iguais a zero!";
+           
+            }else{
+
+                //Calculando...
+                $vm = $distancia/$tempo;
+
+                //Retornando o resultado...
+                return "A Velocidade Média é: $vm";
+            
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo de Velocidade Média
 
         //Calcúlo da Média Aritmética de Dois Números
+        public function mediaAritmeticaNumeros(float $num1, float $num2)
+        {
+           if(($num1 <= 0) || ($num2 <= 0))
+            {
+                //Se um ou todos os números forem iguais ou menores que zero...
+                return "Erro! Não foi possível realizar o cálculo porque os números não podem ser menores ou iguais a zero!";
+           
+            }else{
+
+                //Calculando a média dos dois números...
+                $soma = $num1 + $num2;
+
+                 //Retornando o resultado...
+                return "<br>A média dos três números é ". $soma/2;
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo da Média Aritmética de Dois Números
+
         //Cálculo do Salário Mensal
+        public function calculoSalarioMensal(float $valor, int $horasTrabalhadas)
+        {
+            //Verificando se o valor e/ou as horas trabalhadas são menores ou iguais a zero...
+            if(($valor <= 0) || ($horasTrabalhadas <= 0)){
+
+                //Se o valor e/ou as horas trabalhadas são menores ou iguais a zero...
+                return "Erro! O cálculo não pode ser executado porque o valor e as horas trabalhadas não podem ser menores ou iguais a zero!";
+
+            }else{
+
+                //Calculando...
+                $salario = $valor * $horasTrabalhadas;
+
+                //Retornando o resultado...
+                return "O salário mensal é de R$ $salario.";
+
+            }//Fim da Verificação e do Cálculo
+        }//Fim do Cálculo do Salário Mensal
 
         //Verificar Tempo Restante de Vida até os 100 anos
         public function verificarTempoVida(int $idade)
@@ -460,7 +567,7 @@
         //Cálculo da Soma e a Média de Três Números
         public function somaMediaNumeros(int $num1, int $num2, int $num3)
         {
-
+            //Verificando se os números são menores ou iguais a ero...
             if(($num1 <= 0) || ($num2 <= 0) || ($num3 <=0))
             {
                 //Se um ou todos os números forem iguais ou menores que zero...

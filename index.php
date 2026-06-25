@@ -35,8 +35,8 @@
     <a href="telas/desconto.php" class="btn btn-primary">10% de Desconto</a>
     <a href="telas/converterIdadeMeses.php" class="btn btn-primary">Conversão de Idade para Meses</a>
     <a href="telas/parImpar.php" class="btn btn-primary">Par ou Ímpar?</a>
-    <a href="telas/parImpar.php" class="btn btn-primary">Cálculo do Volume de uma Caixa Retangular</a>
-    <a href="telas/volumeCaixaRetangular.php" class="btn btn-primary">Cálculo do Quadrado e Cubo de um Número</a>
+    <a href="telas/volumeCaixaRetangular.php" class="btn btn-primary">Cálculo do Volume de uma Caixa Retangular</a>
+    <a href="telas/quadradoCubo.php" class="btn btn-primary">Cálculo do Quadrado e Cubo de um Número</a>
     <a href="telas/velocidadeMedia.php" class="btn btn-primary">Velocidade Média</a>
     <a href="telas/mediaAritmetica.php" class="btn btn-primary">Média Aritmética</a>
     <a href="telas/salarioMensal.php" class="btn btn-primary">Sálario Mensal</a>
